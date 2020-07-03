@@ -13,7 +13,7 @@ const testear = formCadastrosUsuario.addEventListener('submit', event =>{
         exibe.forEach(indice => {
             corpoTabela.appendChild(exibeUsuario
                 (indice.name, indice.language, indice.open_issues, indice.forks))
-    
+                
         })
     }
     )
