@@ -16,7 +16,8 @@ const exibeUsuario = (name, stargazers_count, open_issues, forks) => {
 
 listarUsuario().then(exibe => {
     exibe.forEach(indice => {
-        corpoTabela.appendChild(exibeCliente(indice.name, indice.stargazers_count, indice.open_issues, indice.forks))
+        corpoTabela.appendChild(exibeUsuario
+            (indice.name, indice.stargazers_count, indice.open_issues, indice.forks))
 
     })
 }
