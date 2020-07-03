@@ -6,5 +6,17 @@ formCadastrosUsuario.addEventListener('submit', event =>{
 
     const usuario = event.target.querySelector('[data-usuario]')
 
-    listarUsuario(usuario.value)
+const corpoTabela = document.querySelector("[data-conteudo-tabela]")
+
+    listarUsuario(usuario.value).then(exibe => 
+        {
+        exibe.forEach(indice => {
+            corpoTabela.appendChild(exibeUsuario
+                (indice.name, indice.stargazers_count, indice.open_issues, indice.forks))
+    
+        })
+    }
+    )
+
 })
+

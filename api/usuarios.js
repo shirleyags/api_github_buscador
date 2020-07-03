@@ -6,7 +6,7 @@ const listarUsuario = usuario => {
         return resposta.json()
     })
     .then(json =>{
-        return json
+        console.log(json)
     })
 }
 

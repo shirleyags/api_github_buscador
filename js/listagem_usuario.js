@@ -1,4 +1,4 @@
-const corpoTabela = document.querySelector("[data-conteudo-tabela]")
+
 
 const exibeUsuario = (name, stargazers_count, open_issues, forks) => {
     const linha = document.createElement('tr') 
@@ -11,14 +11,5 @@ const exibeUsuario = (name, stargazers_count, open_issues, forks) => {
 
     linha.innerHTML = conteudoLinha
     return linha
+
 }
-
-
-listarUsuario().then(exibe => {
-    exibe.forEach(indice => {
-        corpoTabela.appendChild(exibeUsuario
-            (indice.name, indice.stargazers_count, indice.open_issues, indice.forks))
-
-    })
-}
-)
