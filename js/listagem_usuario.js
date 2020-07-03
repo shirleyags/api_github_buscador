@@ -1,6 +1,5 @@
-
-
 const exibeUsuario = (name, stargazers_count, open_issues, forks) => {
+    
     const linha = document.createElement('tr') 
     const conteudoLinha = `    
         <td>${name}</td>

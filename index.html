@@ -6,15 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <title>Buscador</title>
 </head>
 
 <body>
   <header class="topo">
-    <h1 class="titulo">Buscador de usuários do GitHub</h1>
+    <h1 class="titulo">Buscador de Repositórios GitHub</h1>
   </header>
   <div class="foto">
-
   </div>
 
   <main class="principal">
@@ -23,12 +23,31 @@
       <button class="botao">BUSCAR</button>
     </form>
   </main>
-  <footer class="rodape">
-    <p>Copyright &copy 2020 - Shirley Alice</p>
-  </footer>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col" class="font-weight-bold">Repositório</th>
+        <th scope="col" class="font-weight-bold">Linguagem</th>
+        <th scope="col"class="font-weight-bold" >Issues Abertas</th>
+        <th scope="col" class="font-weight-bold">Forks</th>
+      </tr>
+    </thead>
+    <tbody data-conteudo-tabela>
+      
+     
+    </tbody>
+  </table>
 
 </body>
+<footer class="rodape">
+  <p>Copyright &copy 2020 - Shirley Alice</p>
+</footer>
+
+<script src="js/buscar_usuario.js"></script>
 <script src="api/usuarios.js"></script>
 <script src="js/listagem_usuario.js"></script>
+</body>
+
 
 </html>
