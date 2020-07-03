@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/estilo.css">
   <title>Buscador</title>
 </head>
+
 <body>
 
-  <form data-form>
-    <input type="text" id="usuario" name="usuario" data-usuario placeholder="Digite um usuário">
-    <button class="botao">ENVIAR</button>
-  </form>
+  <header class="topo"> 
+    <h1 class="titulo">Buscador de usuários do GitHub</h1>
+  </header>
+  <div class="foto">
+
+  </div>
+
+  <main class="principal">
+    <form  class="formulario" data-form>
+      <input type="text" id="usuario" name="usuario" data-usuario placeholder="Digite um usuário">
+      <button class="botao">BUSCAR</button>
+    </form>
+  </main>
+  <footer class="rodape">
+    <p>Copyright &copy 2020 - Shirley Alice</p>
+  </footer>
 
   <script src="api/usuarios.js"></script>
   <script src="js/listagem_usuario.js"></script>
 </body>
-  
+
 </html>
