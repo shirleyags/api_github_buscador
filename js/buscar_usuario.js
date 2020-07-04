@@ -1,7 +1,7 @@
 const formCadastrosUsuario = document.querySelector('[data-form]')
 
 
-const testear = formCadastrosUsuario.addEventListener('submit', event =>{
+formCadastrosUsuario.addEventListener('submit', event =>{
     event.preventDefault()
 
     const usuario = event.target.querySelector('[data-usuario]')

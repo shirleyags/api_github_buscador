@@ -6,6 +6,9 @@ const listarUsuario = usuario => {
     .then(resposta =>{
         return resposta.json()
     })
+    .then(json => {
+        return json
+    })
     .catch(erro => console.log(erro));
     
 }
